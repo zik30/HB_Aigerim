@@ -17,6 +17,9 @@ body {
   overflow: hidden;
   font-family: "Gravitas One", serif;
   letter-spacing: 10px;
+  @media (max-width: 700px) {
+    letter-spacing: 5px;
+  }
 }
 .merrywrap {
   position: absolute;
@@ -122,16 +125,20 @@ body {
   width: 100%;
   height: auto;
   transform: translateY(-50%);
-  .row {
-    width: 100%;
-    text-align: center;
-    span {
-      color: #fff;
-      text-shadow: 5px 5px 0 #6c5da3;
-      font-size: 84px;
-      display: inline-block;
-      opacity: 0;
-      transition: transform 0.5s ease-in, opacity 0.7s;
+}
+.row {
+  width: 100%;
+  text-align: center;
+  span {
+    color: #fff;
+    text-shadow: 5px 5px 0 #6c5da3;
+    font-size: 84px;
+    display: inline-block;
+    opacity: 0;
+    transition: transform 0.5s ease-in, opacity 0.7s;
+
+    @media (max-width: 700px) {
+      font-size: 25px;
     }
   }
 }
@@ -294,6 +301,10 @@ body {
 .step-2 .icons .row span:nth-child(14) {
   -webkit-transition-delay: 0.7s;
   transition-delay: 0.7s;
+}
+.step-2 .icons .row span:nth-child(15) {
+  -webkit-transition-delay: 0.75s;
+  transition-delay: 0.75s;
 }
 .step-2 .icons span,
 .step-3 .icons span,
